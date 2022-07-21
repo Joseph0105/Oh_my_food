@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.font_1 {
+  font-family: "shrikhand";
+}
+
+.font_2 {
+  font-family: "roboto";
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .city {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    color: rgb(61, 61, 61);
+    background-color: #eaeaea;
+    font-size: 18px;
+    height: 50px;
+  }
+  .city i {
+    margin-right: 12px;
+  }
+  .explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    background-color: #f6f6f6;
+  }
+  .explorer h2 {
+    text-align: center;
+    width: 80%;
+  }
+  .explorer p {
+    text-align: center;
+    width: 90%;
+    height: 50px;
+  }
+  .explorer .button_explorer {
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    padding: 15px;
+    background-image: linear-gradient(to top left, #9356dc, #ff79da);
+  }
+  main {
+    height: 1000px;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+  }
+  .fonctionnement .nav_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+  }
+  .fonctionnement a {
+    width: 85%;
+  }
+  .nav_card {
+    position: relative;
+    display: flex;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: 3px 3px 10px #eaeaea;
+    box-sizing: border-box;
+  }
+  .nav_card:hover {
+    background-color: #f2eafb;
+    cursor: pointer;
+  }
+  .nav_card a {
+    width: 100%;
+  }
+  .number {
+    border-radius: 100px;
+    position: absolute;
+    left: -5%;
+    bottom: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    color: white;
+    background-color: #9356dc;
+  }
+  .nav_icon {
+    font-size: 20px;
+    color: #848484;
+    width: 25%;
+  }
+  .nav_icon:hover {
+    color: #9356dc;
+  }
+  .restaurants {
+    background-color: #f6f6f6;
+    height: 1000px;
+  }
+  .restaurant_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .restaurant_card {
+    height: 250px;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .restaurant_card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .card_body {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .card_body .card_txt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joseph0105/Oh_my_food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joseph0105/Oh_my_food/issues"
+  },
+  "homepage": "https://github.com/Joseph0105/Oh_my_food#readme",
+  "description": ""
+}

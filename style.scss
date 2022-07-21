@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.font_1 {
+  font-family: "shrikhand";
+}
+.font_2 {
+  font-family: "roboto";
+}
+h2 {
+  margin-left: 20px;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$background_grey: #eaeaea;
+$background_grey_clear: #f6f6f6;
+$primary: #9356dc;
+$secondary: #ff79da;
+
+@media all and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .city {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    color: rgb(61, 61, 61);
+    background-color: $background_grey;
+    font-size: 18px;
+    height: 50px;
+    i {
+      margin-right: 12px;
+    }
+  }
+  .explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    background-color: $background_grey_clear;
+    // QUESTION PAUL - POLICE GRAS
+    h2 {
+      text-align: center;
+      width: 80%;
+    }
+    p {
+      text-align: center;
+      width: 90%;
+      height: 50px;
+    }
+    .button_explorer {
+      height: 50px;
+      color: white;
+      border-radius: 50px;
+      padding: 15px;
+      background-image: linear-gradient(to top left, $primary, $secondary);
+    }
+  }
+  // MAIN
+  main {
+    height: 1000px;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+
+    .nav_cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 250px;
+    }
+    a {
+      width: 85%;
+    }
+  }
+  .nav_card {
+    position: relative;
+    display: flex;
+    height: 70px;
+    border-radius: 20px;
+    background-color: $background_grey_clear;
+    box-shadow: 3px 3px 10px $background_grey;
+    box-sizing: border-box;
+    &:hover {
+      background-color: lighten($color: $primary, $amount: 35);
+      cursor: pointer;
+    }
+    // QUESTION PAUL : ICONE HOVER
+    a {
+      width: 100%;
+    }
+  }
+
+  .number {
+    border-radius: 100px;
+    position: absolute;
+    left: -5%;
+    bottom: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    color: white;
+    background-color: $primary;
+  }
+  .nav_icon {
+    font-size: 20px;
+    color: darken($color: $background_grey, $amount: 40);
+    width: 25%;
+    &:hover {
+      color: $primary;
+    }
+  }
+  // RESTAURANTS
+  .restaurants {
+    background-color: $background_grey_clear;
+    height: 1000px;
+  }
+  .restaurant_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .restaurant_card {
+    height: 250px;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+  .card_body {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+
+    .card_txt {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
