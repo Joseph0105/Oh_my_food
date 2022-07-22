@@ -21,8 +21,10 @@ h2 {
 }
 $background_grey: #eaeaea;
 $background_grey_clear: #f6f6f6;
+$box_shadow: 3px 3px 10px $background_grey;
 $primary: #9356dc;
 $secondary: #ff79da;
+$tertiaire: #99e2d0;
 
 @media all and (max-width: 768px) {
   .title {
@@ -66,7 +68,7 @@ $secondary: #ff79da;
   }
   // MAIN
   main {
-    height: 1000px;
+    height: 1700px;
   }
   .fonctionnement {
     display: flex;
@@ -91,7 +93,7 @@ $secondary: #ff79da;
     height: 70px;
     border-radius: 20px;
     background-color: $background_grey_clear;
-    box-shadow: 3px 3px 10px $background_grey;
+    box-shadow: $box_shadow;
     box-sizing: border-box;
     &:hover {
       background-color: lighten($color: $primary, $amount: 35);
@@ -125,13 +127,16 @@ $secondary: #ff79da;
   // RESTAURANTS
   .restaurants {
     background-color: $background_grey_clear;
-    height: 1000px;
+    height: 1200px;
+    padding-top: 50px;
+    margin-top: 50px;
   }
   .restaurant_box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 1100px;
   }
   .restaurant_card {
     height: 250px;
@@ -139,21 +144,92 @@ $secondary: #ff79da;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 10px #c7c7c7;
     img {
       width: 100%;
       height: 180px;
       object-fit: cover;
-      object-position: bottom;
+      object-position: center;
+      // QUESTION PAUL : CENTRER IMAGE
     }
+  }
+  .card_new {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 70px;
+    height: 25px;
+    background-color: $tertiaire;
+    color: darken($color: $tertiaire, $amount: 40);
+    border-radius: 2px;
+    font-size: 13px;
   }
   .card_body {
     display: flex;
     justify-content: space-between;
     height: 70px;
 
-    .card_txt {
+    .card_txt_box {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      height: 60px;
+      width: 80%;
+      margin-left: 10px;
+    }
+
+    .card_like {
+      position: absolute;
+      width: 10%;
+      font-size: 22px;
+      right: 15px;
+      bottom: 25px;
+      i {
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        &:hover {
+          -webkit-text-stroke-width: 0px;
+          color: $primary;
+          // QUESTION PAUL : DEGRADE
+        }
+      }
+    }
+  }
+  footer {
+    height: 220px;
+    background-color: #353535;
+
+    h3 {
+      margin-left: 20px;
+      padding-top: 20px;
+      color: $background_grey_clear;
+      font-weight: 100;
+    }
+    .footer_list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 90%;
+      margin-left: 20px;
+      height: 120px;
+    }
+
+    .footer_txt {
+      display: flex;
+      height: 10px;
+      color: $background_grey_clear;
+
+      &:hover {
+        color: $tertiaire;
+      }
+
+      i {
+        margin-right: 10px;
+        width: 20px;
+      }
     }
   }
 }
