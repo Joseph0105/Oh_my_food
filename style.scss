@@ -146,6 +146,12 @@ $tertiaire: #99e2d0;
     overflow: hidden;
     position: relative;
     box-shadow: 3px 3px 10px #c7c7c7;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 3px 3px 10px $primary;
+    }
     img {
       width: 100%;
       height: 180px;
