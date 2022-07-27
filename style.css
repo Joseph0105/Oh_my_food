@@ -57,6 +57,7 @@ h2 {
   text-align: center;
   width: 90%;
   height: 50px;
+  color: #848484;
 }
 .explorer .button_explorer {
   height: 50px;
@@ -64,10 +65,6 @@ h2 {
   border-radius: 50px;
   padding: 15px;
   background-image: linear-gradient(to top left, #9356dc, #ff79da);
-}
-
-main {
-  height: 1700px;
 }
 
 .fonctionnement {
@@ -101,8 +98,16 @@ main {
   background-color: #f2eafb;
   cursor: pointer;
 }
+.nav_card:hover > .nav_icon {
+  color: #9356dc;
+}
 .nav_card a {
   width: 100%;
+}
+.nav_card .nav_icon {
+  font-size: 20px;
+  color: #848484;
+  width: 25%;
 }
 
 .number {
@@ -117,20 +122,10 @@ main {
   background-color: #9356dc;
 }
 
-.nav_icon {
-  font-size: 20px;
-  color: #848484;
-  width: 25%;
-}
-.nav_icon:hover {
-  color: #9356dc;
-}
-
 .restaurants {
   background-color: #f6f6f6;
-  height: 1200px;
-  padding-top: 50px;
   margin-top: 50px;
+  padding: 50px 20px;
 }
 
 .restaurant_box {
@@ -150,6 +145,9 @@ main {
   position: relative;
   box-shadow: 3px 3px 10px #c7c7c7;
   transition: 300ms;
+}
+.restaurant_card a {
+  width: 100%;
 }
 .restaurant_card:hover {
   transform: scale(1.05);
@@ -214,6 +212,7 @@ footer {
 }
 footer h3 {
   margin-left: 20px;
+  margin-block-start: 0em;
   padding-top: 20px;
   color: #f6f6f6;
   font-weight: 100;

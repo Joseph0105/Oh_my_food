@@ -19,6 +19,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 $background_grey: #eaeaea;
 $background_grey_clear: #f6f6f6;
 $box_shadow: 3px 3px 10px $background_grey;
@@ -47,7 +48,6 @@ $tertiaire: #99e2d0;
   align-items: center;
   height: 280px;
   background-color: $background_grey_clear;
-  // QUESTION PAUL - POLICE GRAS
   h2 {
     text-align: center;
     width: 80%;
@@ -56,6 +56,7 @@ $tertiaire: #99e2d0;
     text-align: center;
     width: 90%;
     height: 50px;
+    color: darken($color: $background_grey, $amount: 40);
   }
   .button_explorer {
     height: 50px;
@@ -67,7 +68,7 @@ $tertiaire: #99e2d0;
 }
 // MAIN
 main {
-  height: 1700px;
+  // height: 1700px;
 }
 .fonctionnement {
   display: flex;
@@ -98,10 +99,20 @@ main {
   &:hover {
     background-color: lighten($color: $primary, $amount: 35);
     cursor: pointer;
+    & > .nav_icon {
+      color: $primary;
+    }
   }
-  // QUESTION PAUL : ICONE HOVER
   a {
     width: 100%;
+  }
+  .nav_icon {
+    font-size: 20px;
+    color: darken($color: $background_grey, $amount: 40);
+    width: 25%;
+    // &:hover {
+    //   color: $primary;
+    // }
   }
 }
 
@@ -116,20 +127,14 @@ main {
   color: white;
   background-color: $primary;
 }
-.nav_icon {
-  font-size: 20px;
-  color: darken($color: $background_grey, $amount: 40);
-  width: 25%;
-  &:hover {
-    color: $primary;
-  }
-}
+
 // RESTAURANTS
 .restaurants {
   background-color: $background_grey_clear;
-  height: 1200px;
-  padding-top: 50px;
+  // height: 1200px;
   margin-top: 50px;
+  padding: 50px 20px;
+  // HAUTEUR DU BLOCK
 }
 .restaurant_box {
   display: flex;
@@ -148,6 +153,10 @@ main {
   box-shadow: 3px 3px 10px #c7c7c7;
   transition: 300ms;
 
+  a {
+    width: 100%;
+  }
+
   &:hover {
     transform: scale(1.05);
     box-shadow: 3px 3px 10px $primary;
@@ -157,7 +166,6 @@ main {
     height: 180px;
     object-fit: cover;
     object-position: center;
-    // QUESTION PAUL : CENTRER IMAGE
   }
 }
 .card_new {
@@ -213,6 +221,7 @@ footer {
 
   h3 {
     margin-left: 20px;
+    margin-block-start: 0em;
     padding-top: 20px;
     color: $background_grey_clear;
     font-weight: 100;
