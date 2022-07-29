@@ -93,6 +93,7 @@ h2 {
   background-color: #f6f6f6;
   box-shadow: 3px 3px 10px #eaeaea;
   box-sizing: border-box;
+  transition: 300ms;
 }
 .nav_card:hover {
   background-color: #f2eafb;
@@ -144,7 +145,7 @@ h2 {
   overflow: hidden;
   position: relative;
   box-shadow: 3px 3px 10px #c7c7c7;
-  transition: 300ms;
+  transition: transform 300ms;
 }
 .restaurant_card a {
   width: 100%;
@@ -201,8 +202,11 @@ h2 {
   -webkit-text-stroke-color: black;
 }
 .card_body .card_like i:hover {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  font-size: 23px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  color: #9356dc;
   cursor: pointer;
 }
 
