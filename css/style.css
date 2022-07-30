@@ -21,18 +21,23 @@ a {
   align-items: center;
 }
 
+footer {
+  height: 220px;
+  background-color: #353535;
+}
 footer h3 {
-  font-size: 22px;
+  margin-left: 20px;
   margin-block-start: 0em;
-  padding-left: 30px;
-  text-align: center;
+  padding-top: 20px;
+  color: #f6f6f6;
+  font-weight: 100;
 }
 footer .footer_list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
   margin-left: 20px;
   height: 120px;
 }
@@ -49,6 +54,35 @@ footer .footer_txt i {
   width: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  footer h3 {
+    font-size: 22px;
+    margin-block-start: 0em;
+    padding-left: 30px;
+    text-align: center;
+  }
+  footer .footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    height: 120px;
+  }
+  footer .footer_txt {
+    display: flex;
+    height: 10px;
+    color: #f6f6f6;
+  }
+  footer .footer_txt:hover {
+    color: #99e2d0;
+  }
+  footer .footer_txt i {
+    margin-right: 10px;
+    width: 20px;
+  }
+}
 h2 {
   margin-left: 20px;
 }
@@ -230,45 +264,12 @@ h2 {
   -webkit-text-stroke-color: black;
 }
 .card_body .card_like i:hover {
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
   font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
   cursor: pointer;
-}
-
-footer {
-  height: 220px;
-  background-color: #353535;
-}
-footer h3 {
-  margin-left: 20px;
-  margin-block-start: 0em;
-  padding-top: 20px;
-  color: #f6f6f6;
-  font-weight: 100;
-}
-footer .footer_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 90%;
-  margin-left: 20px;
-  height: 120px;
-}
-footer .footer_txt {
-  display: flex;
-  height: 10px;
-  color: #f6f6f6;
-}
-footer .footer_txt:hover {
-  color: #99e2d0;
-}
-footer .footer_txt i {
-  margin-right: 10px;
-  width: 20px;
 }
 
 @media screen and (min-width: 992px) {
