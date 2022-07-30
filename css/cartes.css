@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font_1 {
+  font-family: "shrikhand";
+}
+
+.font_2 {
+  font-family: "roboto";
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .arrow {
+  width: 20%;
+  font-size: 25px;
+}
+header .arrow i {
+  color: #515151;
+}
+header .h1 {
+  width: 70%;
+}
+
+/*# sourceMappingURL=cartes.css.map */
