@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+.font_1 {
+  font-family: "shrikhand";
+}
+.font_2 {
+  font-family: "roboto";
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

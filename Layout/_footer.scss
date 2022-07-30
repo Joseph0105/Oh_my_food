@@ -1,0 +1,32 @@
+footer {
+  h3 {
+    font-size: 22px;
+    margin-block-start: 0em;
+    padding-left: 30px;
+    text-align: center;
+  }
+  .footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    height: 120px;
+  }
+
+  .footer_txt {
+    display: flex;
+    height: 10px;
+    color: $background_grey_clear;
+
+    &:hover {
+      color: $tertiaire;
+    }
+
+    i {
+      margin-right: 10px;
+      width: 20px;
+    }
+  }
+}
