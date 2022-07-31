@@ -1,15 +1,25 @@
 @import "../Utils/variables";
 header {
   display: flex;
-  justify-content: space-between;
-  .arrow {
-    width: 20%;
-    font-size: 25px;
-    i {
-      color: darken($color: $background_grey, $amount: 60);
+  flex-direction: column;
+
+  .header_txt {
+    display: flex;
+    justify-content: space-between;
+    .arrow {
+      width: 20%;
+      font-size: 25px;
+      i {
+        color: darken($color: $background_grey, $amount: 60);
+      }
+    }
+    .h1 {
+      width: 70%;
     }
   }
-  .h1 {
-    width: 70%;
+  .header_img {
+    img {
+      width: 100%;
+    }
   }
 }

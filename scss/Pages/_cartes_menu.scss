@@ -1,0 +1,36 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+main {
+  background-color: $background_grey_clear;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -50px;
+  position: relative;
+  @include column;
+  .main_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      width: 60%;
+      font-weight: 200;
+    }
+    .heart {
+      @include heart;
+      width: 30%;
+      position: initial;
+    }
+  }
+
+  section {
+    @include column;
+    .section_title {
+      font-size: 17px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
