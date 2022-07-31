@@ -128,6 +128,12 @@ h2 {
   padding: 15px;
   background-image: linear-gradient(to top left, #9356dc, #ff79da);
 }
+.explorer .button_explorer:hover {
+  box-shadow: 4px 4px 8px #ff79da;
+  filter: brightness(1.1);
+  text-shadow: 2px 2px 4px white;
+  cursor: pointer;
+}
 
 .fonctionnement {
   display: flex;
