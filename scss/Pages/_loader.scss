@@ -1,0 +1,177 @@
+@import "../Utils/variables";
+.body_loader {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: $tertiaire;
+  text-align: center;
+}
+section {
+  height: 500px;
+  line-height: 500px;
+  background-color: $primary;
+}
+.section_2 {
+  background-color: $secondary;
+}
+.section_3 {
+  background-color: $tertiaire;
+  color: $secondary;
+}
+.section_4 {
+  background-color: black;
+  color: white;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+// Loader Quart de cercle
+.loader_quart {
+  border-radius: 50px;
+  border: 6px solid darken($color: $tertiaire, $amount: 30);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: $tertiaire;
+    animation: spin 1s linear 3s infinite;
+  }
+}
+
+// Loader double cercle
+
+.loader_double {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-bottom-color: darken($color: $secondary, $amount: 30);
+  border-top-color: darken($color: $secondary, $amount: 30);
+  animation: spin 1s linear infinite;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: $tertiaire;
+    border-bottom-color: $tertiaire;
+    opacity: 0.6;
+    animation: spinreverse 2s linear infinite;
+  }
+}
+
+// loader circles
+.loader_circles {
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: darken($color: $secondary, $amount: 30);
+  animation: spin 1s linear infinite;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: $secondary;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: $secondary;
+    opacity: 0.6;
+    animation: spin 10s linear infinite;
+  }
+}
+
+// Loader barres
+
+.loader_barres::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  animation: grow 1.5s linear infinite;
+}
+.loader_barres::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  animation: grow 1.5s linear -0.5s infinite;
+}
+.loader_barres span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  animation: grow 1.5s linear -1s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}

@@ -46,7 +46,6 @@ main {
       height: 300px;
       @include column;
       margin-bottom: 30px;
-
       .card_menu {
         display: flex;
         justify-content: space-between;
