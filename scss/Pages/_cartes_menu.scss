@@ -60,13 +60,19 @@ main {
           width: 80%;
           margin: 0 auto;
           position: relative;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          // white-space: nowrap;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
           .txt_bold {
             padding-bottom: 5px;
             font-weight: 600;
             font-size: 1em;
+          }
+          .txt_slim {
+            width: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
         .card_price {
