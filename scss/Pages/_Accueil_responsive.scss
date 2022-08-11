@@ -36,7 +36,6 @@
   // MAIN
 
   main {
-    height: 1100px;
     background-color: $background_grey_clear;
   }
   .fonctionnement {
@@ -57,25 +56,24 @@
     a {
       width: 100%;
     }
+    .number {
+      left: -15px;
+    }
   }
 
   // RESTAURANTS
   .restaurants {
-    height: 750px;
     padding-top: 0px;
-    margin-top: 20px;
   }
   .restaurant_box {
-    margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    height: 750px;
   }
   .restaurant_card {
     height: 300px;
-    width: 45%;
+    width: 25%;
 
     img {
       height: 220px;
