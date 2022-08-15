@@ -58,25 +58,28 @@ main {
         box-shadow: 4px 4px 8px $background_grey;
         opacity: 0;
         transform: translateY(-30px);
-        // transition: 600ms;
+        transition: 600ms;
         &:hover {
           cursor: pointer;
           .card_hover {
-            display: block;
             animation: appear 600ms;
             transition: 600ms;
+            margin-right: 0rem;
           }
           .rotate-center {
-            -webkit-animation: rotate-center 0.6s ease-in-out 300ms reverse both;
-            animation: rotate-center 0.6s ease-in-out 200ms reverse both;
+            -webkit-animation: rotate 0.3s ease-in-out 300ms reverse both;
+            animation: rotate 0.6s ease-in-out 200ms reverse both;
           }
         }
 
         .card_txt {
-          width: 70%;
+          width: 90%;
           margin: 20px 0px 20px 20px;
           position: relative;
           transition: 600ms;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           .txt_bold {
             padding-bottom: 5px;
@@ -93,6 +96,7 @@ main {
           }
         }
         .card_price {
+          width: 10%;
           align-self: flex-end;
           font-weight: 600;
           font-size: 17px;
@@ -100,9 +104,8 @@ main {
           transition: 600ms;
         }
         .card_hover {
-          // display: none;
-          margin-right: -3rem;
-          width: 20px;
+          margin-right: -5rem;
+          width: 5rem;
           height: 100%;
           color: white;
           font-size: 25px;
@@ -139,24 +142,12 @@ main {
     transform: none;
   }
 }
-@-webkit-keyframes rotate-center {
+@keyframes rotate {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 

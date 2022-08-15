@@ -6,7 +6,7 @@
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: loaderscreen 500ms;
+  animation: loaderscreen 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   display: flex;
@@ -202,7 +202,7 @@ h2 {
 .number {
   border-radius: 100px;
   position: absolute;
-  left: -5%;
+  left: -10px;
   bottom: 20px;
   width: 25px;
   height: 25px;
@@ -213,7 +213,6 @@ h2 {
 
 .restaurants {
   background-color: #f6f6f6;
-  margin-top: 50px;
   padding: 50px 20px;
 }
 
@@ -221,8 +220,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 15px;
   align-items: center;
-  height: 1100px;
 }
 
 .restaurant_card {
@@ -395,7 +394,6 @@ footer .footer_txt i {
     background-color: #eaeaea;
   }
   main {
-    height: 1100px;
     background-color: #f6f6f6;
   }
   .fonctionnement {
@@ -416,22 +414,21 @@ footer .footer_txt i {
   .nav_card a {
     width: 100%;
   }
+  .nav_card .number {
+    left: -15px;
+  }
   .restaurants {
-    height: 750px;
     padding-top: 0px;
-    margin-top: 20px;
   }
   .restaurant_box {
-    margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    height: 750px;
   }
   .restaurant_card {
     height: 300px;
-    width: 45%;
+    width: 25%;
   }
   .restaurant_card img {
     height: 220px;
@@ -476,7 +473,8 @@ header .header_txt .arrow i {
   color: #515151;
 }
 header .header_txt .h1 {
-  width: 70%;
+  width: 80%;
+  margin-right: 50px;
 }
 header .header_img img {
   width: 100%;
@@ -553,30 +551,48 @@ main section .cards_box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
   margin-bottom: 30px;
 }
 main section .cards_box .card_menu {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  overflow: hidden;
   border-radius: 20px;
   width: 90%;
   align-self: center;
   box-shadow: 4px 4px 8px #eaeaea;
-  padding: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+main section .cards_box .card_menu:hover {
+  cursor: pointer;
+}
+main section .cards_box .card_menu:hover .card_hover {
+  display: block;
+  animation: appear 600ms;
+  transition: 600ms;
+}
+main section .cards_box .card_menu:hover .rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out 300ms reverse both;
+  animation: rotate-center 0.6s ease-in-out 200ms reverse both;
 }
 main section .cards_box .card_menu .card_txt {
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 20px 0px 20px 20px;
   position: relative;
+  transition: 600ms;
 }
 main section .cards_box .card_menu .card_txt .txt_bold {
   padding-bottom: 5px;
   font-weight: 600;
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main section .cards_box .card_menu .card_txt .txt_slim {
-  width: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -585,6 +601,26 @@ main section .cards_box .card_menu .card_price {
   align-self: flex-end;
   font-weight: 600;
   font-size: 17px;
+  margin: 20px;
+  transition: 600ms;
+}
+main section .cards_box .card_menu .card_hover {
+  margin-right: -3rem;
+  width: 20px;
+  height: 100%;
+  color: white;
+  font-size: 25px;
+  background-color: #99e2d0;
+  transition: 300ms;
+}
+main section .cards_box > .card_menu:nth-child(1) {
+  animation: apparition 0.8s 0.2s ease-out forwards;
+}
+main section .cards_box > .card_menu:nth-child(2) {
+  animation: apparition 0.8s 0.4s ease-out forwards;
+}
+main section .cards_box > .card_menu:nth-child(3) {
+  animation: apparition 0.8s 0.6s ease-out forwards;
 }
 main .button_box .button {
   height: 50px;
@@ -602,6 +638,40 @@ main .button_box .button:hover {
   cursor: pointer;
 }
 
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateX(100%) scaleX(0%);
+  }
+  100% {
+    transform: translateX(0%) scaleX(100%);
+  }
+}
 footer {
   height: 220px;
   background-color: #353535;
