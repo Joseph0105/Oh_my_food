@@ -295,6 +295,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
   cursor: pointer;
+  transition: 600ms;
 }
 
 footer {
@@ -525,6 +526,7 @@ main .main_title .heart i:hover {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
   cursor: pointer;
+  transition: 600ms;
 }
 main section {
   padding: 5px;
