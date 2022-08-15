@@ -1,0 +1,26 @@
+@media screen and (min-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  main {
+    align-self: center;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    .main_title {
+      justify-content: space-between;
+      h2 {
+        width: 25%;
+      }
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+    }
+    .section_1 {
+      width: 40%;
+    }
+  }
+}
