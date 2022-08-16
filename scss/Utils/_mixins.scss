@@ -39,6 +39,6 @@
 @mixin button_hover {
   box-shadow: 4px 4px 8px $secondary;
   filter: brightness(1.1);
-  text-shadow: 2px 2px 4px lighten($color: $secondary, $amount: 30);
+  text-shadow: 2px 2px 4px lighten($color: $secondary, $amount: 10);
   cursor: pointer;
 }

@@ -151,7 +151,7 @@ h2 {
 .explorer .button_explorer:hover {
   box-shadow: 4px 4px 8px #ff79da;
   filter: brightness(1.1);
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 2px 2px 4px #fface8;
   cursor: pointer;
 }
 
@@ -389,7 +389,7 @@ footer .footer_txt i {
   }
   .explorer {
     width: 100%;
-    height: 250px;
+    height: 280px;
     border-radius: 20px 20px 0px 0px;
     background-color: #eaeaea;
   }
@@ -399,6 +399,7 @@ footer .footer_txt i {
   .fonctionnement {
     height: 200px;
     justify-content: space-between;
+    background-color: white;
   }
   .fonctionnement .nav_cards {
     flex-direction: row;
@@ -422,7 +423,6 @@ footer .footer_txt i {
   }
   .restaurant_box {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -488,9 +488,6 @@ header .header_img img {
     align-items: flex-start;
   }
   header h1 {
-    margin-left: 50px;
-  }
-  header .arrow {
     margin-left: 50px;
   }
   .header_img {
@@ -655,7 +652,7 @@ main .button_box .button {
 main .button_box .button:hover {
   box-shadow: 4px 4px 8px #ff79da;
   filter: brightness(1.1);
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 2px 2px 4px #fface8;
   cursor: pointer;
 }
 
@@ -687,24 +684,30 @@ main .button_box .button:hover {
     flex-direction: column;
     padding: 0px;
   }
-  main {
+  .main_carte {
     align-self: center;
-    width: 80%;
+    width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  main .main_title {
-    justify-content: space-between;
-  }
-  main .main_title h2 {
+  .main_carte .main_title h2 {
     width: 25%;
   }
-  main section {
+  .main_carte .section_carte {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
-  main .section_1 {
-    width: 40%;
+  .main_carte .section_carte .card_menu {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 210px) {
+  header h1 {
+    font-size: 15px;
+  }
+  header .arrow i {
+    font-size: 10px;
   }
 }
 footer {
