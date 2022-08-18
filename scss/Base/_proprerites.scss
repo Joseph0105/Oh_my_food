@@ -4,12 +4,11 @@ a {
 }
 * {
   box-sizing: border-box;
-}
-.font_1 {
-  font-family: "shrikhand";
-}
-.font_2 {
   font-family: "roboto";
+}
+h1,
+.section_loader {
+  font-family: "shrikhand";
 }
 .flex_center {
   display: flex;
