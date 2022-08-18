@@ -126,6 +126,15 @@ h2 {
   font-size: 18px;
   height: 50px;
 }
+.city input {
+  border: none;
+  background-color: #eaeaea;
+  width: 130px;
+}
+.city input::placeholder {
+  color: black;
+  text-align: center;
+}
 .city i {
   margin-right: 12px;
 }
@@ -394,6 +403,10 @@ footer .footer_txt i {
     font-size: 18px;
     height: 50px;
     align-self: flex-end;
+    margin-left: 100px;
+  }
+  .city input {
+    background-color: white;
   }
   .city i {
     margin-right: 12px;

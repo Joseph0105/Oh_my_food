@@ -13,6 +13,15 @@ h2 {
   background-color: $background_grey;
   font-size: 18px;
   height: 50px;
+  input {
+    border: none;
+    background-color: $background_grey;
+    width: 130px;
+    &::placeholder {
+      color: black;
+      text-align: center;
+    }
+  }
   i {
     margin-right: 12px;
   }
