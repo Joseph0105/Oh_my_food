@@ -90,7 +90,8 @@ a {
 }
 
 h1,
-.section_loader {
+.section_loader,
+h3 {
   font-family: "shrikhand";
 }
 
@@ -455,7 +456,8 @@ a {
 }
 
 h1,
-.section_loader {
+.section_loader,
+h3 {
   font-family: "shrikhand";
 }
 
