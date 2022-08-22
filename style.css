@@ -297,7 +297,8 @@ h2 {
 }
 .card_body .card_like {
   position: absolute;
-  font-size: 23px;
+  width: 10%;
+  font-size: 22px;
   right: 15px;
   bottom: 25px;
 }
@@ -311,11 +312,9 @@ h2 {
   font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0px;
   cursor: pointer;
-  animation: heart 600ms;
-  transition: 600ms;
+  animation: heart 1s;
 }
 
 footer {
@@ -555,7 +554,8 @@ main .main_title h2 {
 }
 main .main_title .heart {
   position: absolute;
-  font-size: 23px;
+  width: 10%;
+  font-size: 22px;
   right: 15px;
   bottom: 25px;
   width: 30%;
@@ -571,11 +571,9 @@ main .main_title .heart i:hover {
   font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0px;
   cursor: pointer;
-  animation: heart 600ms;
-  transition: 600ms;
+  animation: heart 1s;
 }
 main section .section_1 {
   padding: 5px;
