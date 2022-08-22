@@ -308,7 +308,6 @@ h2 {
 }
 .card_body .card_like i:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -568,7 +567,6 @@ main .main_title .heart i {
 }
 main .main_title .heart i:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
