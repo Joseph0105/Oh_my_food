@@ -5,6 +5,7 @@
   bottom: 25px;
 
   i {
+    width: 24px;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -17,7 +18,7 @@
       -webkit-text-stroke-color: transparent;
       cursor: pointer;
       animation: heart 600ms;
-      transition: 600ms;
+      transition: 800ms;
     }
   }
 }

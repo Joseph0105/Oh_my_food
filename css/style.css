@@ -302,6 +302,7 @@ h2 {
   bottom: 25px;
 }
 .card_body .card_like i {
+  width: 24px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -314,7 +315,7 @@ h2 {
   -webkit-text-stroke-color: transparent;
   cursor: pointer;
   animation: heart 600ms;
-  transition: 600ms;
+  transition: 800ms;
 }
 
 footer {
@@ -561,6 +562,7 @@ main .main_title .heart {
   position: initial;
 }
 main .main_title .heart i {
+  width: 24px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -573,7 +575,7 @@ main .main_title .heart i:hover {
   -webkit-text-stroke-color: transparent;
   cursor: pointer;
   animation: heart 600ms;
-  transition: 600ms;
+  transition: 800ms;
 }
 main section .section_1 {
   padding: 5px;
