@@ -83,7 +83,7 @@ h2 {
   &:hover {
     background-color: lighten($color: $primary, $amount: 35);
     cursor: pointer;
-    & > .nav_icon {
+    & .nav_icon {
       color: $primary;
     }
   }

@@ -206,7 +206,7 @@ h2 {
   background-color: #f2eafb;
   cursor: pointer;
 }
-.nav_card:hover > .nav_icon {
+.nav_card:hover .nav_icon {
   color: #9356dc;
 }
 .nav_card a {
@@ -297,24 +297,25 @@ h2 {
 }
 .card_body .card_like {
   position: absolute;
-  width: 10%;
-  font-size: 22px;
+  font-size: 23px;
   right: 15px;
   bottom: 25px;
 }
 .card_body .card_like i {
+  width: 24px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 .card_body .card_like i:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: transparent;
   cursor: pointer;
-  animation: heart 1s;
+  animation: heart 600ms;
+  transition: 800ms;
 }
 
 footer {
@@ -554,26 +555,27 @@ main .main_title h2 {
 }
 main .main_title .heart {
   position: absolute;
-  width: 10%;
-  font-size: 22px;
+  font-size: 23px;
   right: 15px;
   bottom: 25px;
   width: 30%;
   position: initial;
 }
 main .main_title .heart i {
+  width: 24px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 main .main_title .heart i:hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  font-size: 23px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: transparent;
   cursor: pointer;
-  animation: heart 1s;
+  animation: heart 600ms;
+  transition: 800ms;
 }
 main section .section_1 {
   padding: 5px;
@@ -603,7 +605,7 @@ main section .section_1 .cards_box {
 main section .section_1 .cards_box .card_menu {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: red;
   overflow: hidden;
   border-radius: 20px;
   width: 90%;
@@ -618,12 +620,11 @@ main section .section_1 .cards_box .card_menu:hover {
   cursor: pointer;
 }
 main section .section_1 .cards_box .card_menu:hover .card_hover {
-  animation: appear 600ms;
   transition: 600ms;
   margin-right: 0rem;
 }
 main section .section_1 .cards_box .card_menu:hover .rotate-center {
-  -webkit-animation: rotate 0.3s ease-in-out 300ms reverse both;
+  animation: rotate 0.3s ease-in-out 300ms reverse both;
   animation: rotate 0.6s ease-in-out 200ms reverse both;
 }
 main section .section_1 .cards_box .card_menu .card_txt {

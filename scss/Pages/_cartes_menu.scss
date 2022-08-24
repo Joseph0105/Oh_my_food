@@ -66,12 +66,11 @@ main {
         &:hover {
           cursor: pointer;
           .card_hover {
-            animation: appear 600ms;
+            // animation: appear 600ms;
             transition: 600ms;
             margin-right: 0rem;
           }
           .rotate-center {
-            -webkit-animation: rotate 0.3s ease-in-out 300ms reverse both;
             animation: rotate 0.6s ease-in-out 200ms reverse both;
           }
         }
@@ -150,19 +149,19 @@ main {
   }
 }
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(-360deg);
   }
 }
 
 @keyframes appear {
-  0% {
+  from {
     transform: translateX(100%) scaleX(0%);
   }
-  100% {
+  to {
     transform: translateX(0%) scaleX(100%);
   }
 }

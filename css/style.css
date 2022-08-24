@@ -206,7 +206,7 @@ h2 {
   background-color: #f2eafb;
   cursor: pointer;
 }
-.nav_card:hover > .nav_icon {
+.nav_card:hover .nav_icon {
   color: #9356dc;
 }
 .nav_card a {
@@ -357,13 +357,14 @@ footer .footer_txt i {
     margin-block-start: 0em;
     padding-left: 30px;
     text-align: center;
+    margin-right: 30px;
   }
   footer .footer_list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 97%;
     margin-left: 20px;
     height: 120px;
   }
@@ -620,12 +621,10 @@ main section .section_1 .cards_box .card_menu:hover {
   cursor: pointer;
 }
 main section .section_1 .cards_box .card_menu:hover .card_hover {
-  animation: appear 600ms;
   transition: 600ms;
   margin-right: 0rem;
 }
 main section .section_1 .cards_box .card_menu:hover .rotate-center {
-  -webkit-animation: rotate 0.3s ease-in-out 300ms reverse both;
   animation: rotate 0.6s ease-in-out 200ms reverse both;
 }
 main section .section_1 .cards_box .card_menu .card_txt {
@@ -702,19 +701,19 @@ main .button_box .button:hover {
   }
 }
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(-360deg);
   }
 }
 @keyframes appear {
-  0% {
-    transform: translateX(100%) scaleX(0%);
+  from {
+    transform: translateX(100%) scaleX(0);
   }
-  100% {
-    transform: translateX(0%) scaleX(100%);
+  to {
+    transform: translateX(0%) scaleX(100);
   }
 }
 @media screen and (min-width: 992px) {
@@ -789,13 +788,14 @@ footer .footer_txt i {
     margin-block-start: 0em;
     padding-left: 30px;
     text-align: center;
+    margin-right: 30px;
   }
   footer .footer_list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 97%;
     margin-left: 20px;
     height: 120px;
   }
